@@ -1,18 +1,16 @@
 import personas.*
 
 object spa {
-	var ultimaPersona = null
+
+	var property ultimapersona
 	method atender(persona) {
 		persona.recibirMasajes()
 		persona.darseUnBanioDeVapor()
-		ultimaPersona = persona
-	}
-	method ultimaPersona() { return ultimaPersona	}
-	
-	method Premio(persona){
-		if (ultimaPersona==ultimaPersona){
-			persona.recibirMasajes()
-			persona.recibirMasajes()
-		}
-	}
+		ultimapersona=persona
+		if (ultimapersona==persona){
+		persona.recibirMasajes()}
 }
+
+}
+	 
+	

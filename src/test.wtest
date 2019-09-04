@@ -1,0 +1,33 @@
+import personas.*
+import spa.*
+
+test "ramiro baño Vapor" {
+	ramiro.darseUnBanioDeVapor()
+	assert.equals(false,ramiro.grasaPiel())
+
+}
+
+test"Bruno ve el noticiero y ya no esta feliz "{
+	bruno.verElNoticiero()
+	assert.notThat(bruno.esFeliz())
+	
+}
+
+test " Ramiro va al spa y su piel ya no es grasa"{
+	spa.atender(ramiro)
+	assert.equals(false,ramiro.grasaPiel())
+}
+test "olivia va al spa y su grado de concentracion aumenta"{
+	spa.atender(olivia)
+	assert.equals(12,olivia.gradoDeConcentracion())
+}
+test "Bruno va al spa y aparte se da otro baño de vapor y su peso disminuye mas"{
+	spa.atender(bruno)
+	bruno.darseUnBanioDeVapor()
+	assert.equals(54000,bruno.peso())
+}
+
+test "Bruno esta un medio dia en casa y mira el noticiero, bruno ya no esta feliz "{
+	bruno.mediodiaEnCasa()
+	assert.equals(false,bruno.esFeliz())
+}

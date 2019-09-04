@@ -1,9 +1,11 @@
-
+import spa.*
 object olivia {
 	var  gradoDeConcentracion = 6 
 	method  gradoDeConcentracion() {return gradoDeConcentracion }
 	method recibirMasajes() { gradoDeConcentracion += 3}
 	method discute() {gradoDeConcentracion -= 1}
+	method darseUnBanioDeVapor() {}
+
 }
 
 
@@ -35,6 +37,9 @@ object ramiro {
 	var contracturado=0
 	var grasaPiel= true 
 	method contracturado(){ return contracturado}
+
+	method grasaPiel() {return grasaPiel}
+
 	method recibirMasajes() {
 		if (contracturado>1){
 			contracturado-=2
@@ -55,6 +60,7 @@ object ramiro {
 		self.bajarALaFosa()
 	}
 }
+
 
 
 
